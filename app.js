@@ -76,3 +76,27 @@ function logInfoAbout ( name, year){
 logInfoAbout ( 'Сергей', 1977)
 logInfoAbout ( 'Елена', 1995)
 logInfoAbout ( "Елена", 2022)
+
+//9 Массивы
+
+const cars = ["Мазда", "Мерседес", "Форд"]
+//const cars = new Array("Мазда", "Мерседес", "Форд")
+
+cars[0] = 'Порше'
+//cars[3] = 'Мазда'               //расширение количества членов массива
+cars[cars.length] = 'Мазда'       //добавление нового члена массива в конец(и расширение массива)
+console.log(cars)
+
+//10 Циклы
+
+for(let i = 0; i < cars.length; i++){
+   const car = cars[i]
+   console.log(car) 
+}   
+
+for ( let car of cars){
+    console.log(car) 
+}
+
+//11 Объекты
+
