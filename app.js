@@ -55,5 +55,24 @@ console.log(num1 === num2)
 
 if(isReady) console.log('Все готово!')
 
+//7 Булева логика
 
+//8 Функции
 
+function calculateAge(year){
+    return 2021 - year - 1
+}
+
+function logInfoAbout ( name, year){
+    const age = calculateAge(year)
+
+    if(age > 0){
+        console.log('Человек по имени ' + name + ' сейчас имеет возраст ' + age)
+    }
+    else{
+        console.log('Это уже будущее!')
+    }
+}
+logInfoAbout ( 'Сергей', 1977)
+logInfoAbout ( 'Елена', 1995)
+logInfoAbout ( "Елена", 2022)
