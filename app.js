@@ -100,3 +100,22 @@ for ( let car of cars){
 
 //11 Объекты
 
+/**/
+const person = {
+    firstName: 'Sergey',
+    lastName: 'Mok',
+    year: 1977,
+    languges: ['Ru','En','De'],
+    hasWife: true,
+    greet: function(){
+        console.log('greet from person')        
+    }
+ }
+console.log(person.firstName)
+console.log(person['lastName'])
+const key = 'year'
+console.log(person[key])
+person.isProgrammer = true
+console.log(person) 
+
+person.greet()
